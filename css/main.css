@@ -35,6 +35,16 @@ html {
     width: 14px;
     left: calc(50% - 7px);
     bottom: 50%;
+    transition: all 5s linear;
+    transform-origin: bottom center;
+}
+
+.clock-face:target .hand-minute {
+    transform: rotate(4320deg);
+}
+
+.clock-face:target .hand-hour {
+    transform: rotate(360deg);
 }
 
 .center {
